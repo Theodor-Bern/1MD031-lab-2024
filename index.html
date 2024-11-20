@@ -3,59 +3,63 @@
    <head>
        <title>Burkens Burgershop</title>
        <meta charset="utf-8"/>
+       
+       <link rel="stylesheet" href="public/css/style.css">
+       
    </head>
    <body>
         <header>
-            <h1>Welcome to Burkens Burgers</h1>
+            
+            <img src="public/img/burger-rest.png" alt="Object Fit Image"> 
+            <h1>Welcome to Burkens Burgers</h1>   
         </header>
         
         
-        <nav> 
-            Menu items
-        </nav>
+       
         <main>
-            <section>
+            <section id="burger">
                 <h2>Select burger</h2>
                 <p>Select your burger below.</p>
-                
-                <div style="display: inline-block">
-                    <h3>The Cheeseburger</h3>
+                <div class="wrapper">
+                <div class="box">
+                    <h3>The Cheese</h3>
                     <img src="public/img/cheeseburger.jpg" style="width: 200px">
                     <ul>
-                        <li>1600 kcal</li>
-                        <li>Contains Gluten</li>
-                        <li>Contans Lactose</li>
-
+                        <li><span>1600 kcal</span></li>
+                        <li><span class="allergy">Contains gluten</span></li>
+                        <li><span class="allergy">Contains lactose</span></li>
+                        <li><span>Contains meat</span></li>
                     </ul>
                 </div>
-                <div style="display: inline-block">
+                <div class="box">
                     <h3>Triple Onion</h3>
                     <img src="public/img/Onion.jpg" style="width: 200px">
                     <ul>
-                        <li>1800 kcal</li>
-                        <li>Contains Gluten</li>
-                        <li>Contans Lactose</li>
+                        <li><span>1800 kcal</span></li>
+                        <li><span class="allergy">Contains gluten</span></li>
+                        <li><span class="allergy">Contains lactose</span></li>
+                        <li><span>Contains meat</span></li>
 
                     </ul>
 
                 </div>
-                <div style="display: inline-block">
-                    <h3>The "Smoky"</h3>
+                <div class="box">
+                    <h3>The Smoky</h3>
                     <img src="public/img/Smoked.jpg" style="width: 200px">
                     <ul>
-                        <li>2000 kcal</li>
-                        <li>Contains Gluten</li>
-                        <li>Contans Lactose</li>
-                        <li>Contains Pork</li>
+                        <li><span>2000 kcal</span></li>
+                        <li><span class="allergy">Contains gluten</span></li>
+                        <li><span class="allergy">Contains lactose</span></li>
+                        <li><span>Contains meat</span></li>
 
                     </ul>
+                </div>
                 </div>
             </section>
                 
             <section id="contact">
-            
-
-                <h3>Customer Information</h3>
+    
+                <h2>Customer Information</h2>
                 <p>Please provide your details</p>
                 <form action="/submit" method="post">
                 <p>
@@ -104,7 +108,7 @@
         </main>
 
         <button type="Place your order">
-            <img src="public/img/buy.png" style="width:10px">
+            <img src="public/img/buy.png" style="width:14px">
             Place your order
 
         </button>
