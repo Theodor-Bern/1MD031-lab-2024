@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Theos Burgershop</title>
+       <meta charset="utf-8"/>
+       
+       <link rel="stylesheet" href="public/css/style.css">
+       
+   </head>
+   <body>
+        <header>
+            
+            <img src="public/img/burger-rest.png" alt="Object Fit Image"> 
+            <h1>Welcome to Theos Burgers</h1>   
+        </header>
+        
+        
+       
+        <main>
+            <section id="burger">
+                <h2>Select burger</h2>
+                <p>Select your burger below.</p>
+                <div class="wrapper">
+                <div class="box">
+                    <h3>The Cheese</h3>
+                    <img src="public/img/cheeseburger.jpg" style="width: 200px">
+                    <ul>
+                        <li><span>1600 kcal</span></li>
+                        <li><span class="allergy">Contains gluten</span></li>
+                        <li><span class="allergy">Contains lactose</span></li>
+                        <li><span>Contains meat</span></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Triple Onion</h3>
+                    <img src="public/img/Onion.jpg" style="width: 200px">
+                    <ul>
+                        <li><span>1800 kcal</span></li>
+                        <li><span class="allergy">Contains gluten</span></li>
+                        <li><span class="allergy">Contains lactose</span></li>
+                        <li><span>Contains meat</span></li>
+
+                    </ul>
+
+                </div>
+                <div class="box">
+                    <h3>The Smoky</h3>
+                    <img src="public/img/Smoked.jpg" style="width: 200px">
+                    <ul>
+                        <li><span>2000 kcal</span></li>
+                        <li><span class="allergy">Contains gluten</span></li>
+                        <li><span class="allergy">Contains lactose</span></li>
+                        <li><span>Contains meat</span></li>
+
+                    </ul>
+                </div>
+                </div>
+            </section>
+                
+            <section id="contact">
+    
+                <h2>Customer Information</h2>
+                <p>Please provide your details</p>
+                <form action="/submit" method="post">
+                <p>
+                    <label for="fullname">Full name</label><br>
+                    <input type="text" id="firstname" name="fn" required="required" placeholder="Full name">
+                </p>
+                
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                </p>
+                <p>
+                    <label for="street">Street</label><br>
+                    <input type="text" id="street" name="st" required="required" placeholder="Street">
+                </p>
+                <p>
+                    <label for="housenumber">Housenumber</label><br>
+                    <input type="number" name="hn" id="housenumber" required="required" placeholder="Housenumber" min="1" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                </p>
+                <p>
+                    <label for="Pay-method">Pay method</label><br>
+                    <select id="pm" name="pay-method">
+                        <option>Debit</option>
+                        <option>Credit</option>
+                        <option>Paypal</option>
+                        <option>Venmo</option>
+                        <option>Klarna</option>
+                    </select>
+                 </p>
+                 <p>Gender:</p>
+                 <p>
+                     <label>
+                         <input type="radio" name="gender" value="male" checked> Male
+                     </label><br>
+                     <label>
+                         <input type="radio" name="gender" value="female"> Female
+                     </label><br>
+                     <label>
+                         <input type="radio" name="gender" value="not_provide"> Do not wish to provide
+                     </label>
+                 </p>
+                </form>
+
+
+            </section>
+        </main>
+
+        <button type="Place your order">
+            <img src="public/img/buy.png" style="width:14px">
+            Place your order
+
+        </button>
+
+
+        <hr>
+
+
+        <footer>
+            &copy; Burken's Burgershop
+        </footer>
+        
+
+   </body>
+</html>
